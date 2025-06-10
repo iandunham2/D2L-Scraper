@@ -1,0 +1,515 @@
+{
+  "tag": "div",
+  "attributes": {
+    "class": "d2l-le-disc-post d2l-le-disc-post-border d2l_1_283_295",
+    "data-postid": "44588695",
+    "data-contextmenuid": "postContextMenu_44588695",
+    "data-postunreadtextid": "postUnread_44588695",
+    "data-contentsplaceholderid": "threadListItemContents_19956034"
+  },
+  "text": "",
+  "children": [
+    {
+      "tag": "div",
+      "attributes": {
+        "class": "d2l-le-disc-posrev"
+      },
+      "text": "",
+      "children": [
+        {
+          "tag": "div",
+          "attributes": {},
+          "text": "",
+          "children": [
+            {
+              "tag": "div",
+              "attributes": {
+                "class": " d2l-hidden"
+              },
+              "text": "",
+              "children": [
+                {
+                  "tag": "span",
+                  "attributes": {
+                    "class": "d2l-fragment"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "a",
+                      "attributes": {
+                        "name": "",
+                        "tabindex": "-1"
+                      },
+                      "text": "",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attributes": {
+                "class": " d2l-inline d2l_le_discussions_threadlistitem_subject"
+              },
+              "text": "",
+              "children": [
+                {
+                  "tag": "div",
+                  "attributes": {
+                    "class": "d2l_1_46_586 d2l_1_48_625"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "h2",
+                      "attributes": {
+                        "class": "d2l-heading-2 d2l-heading-none d2l_1_284_859"
+                      },
+                      "text": "",
+                      "children": [
+                        {
+                          "tag": "a",
+                          "attributes": {
+                            "class": "d2l-linkheading-link d2l-clickable d2l-link",
+                            "href": "/d2l/le/3428449/discussions/threads/19956034/View",
+                            "title": "Module 1",
+                            "tabindex": "0"
+                          },
+                          "text": "Module 1",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "d2l-dropdown-context-menu",
+                  "attributes": {
+                    "no-auto-open": "",
+                    "text": "Actions for Module 1",
+                    "id": "d2l_1_106_75",
+                    "class": "d2l-contextmenu-ph d2l-contextmenu-ph-dropdown d2l_1_46_586",
+                    "data-contextmenuid": "d2l_1_107_386",
+                    "data-placeholderkey": "d2l_1_285_699",
+                    "animation-type": "opacity-transform"
+                  },
+                  "text": "",
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "attributes": {
+                    "id": "d2l_1_286_441",
+                    "class": "d2l-floating-container d2l-hidden "
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "template",
+                      "attributes": {
+                        "id": "d2l_1_107_386",
+                        "class": "d2l-contextmenu-template",
+                        "data-floating-container-id": "d2l_1_286_441",
+                        "data-dropdown-content-id": "d2l_1_287_329"
+                      },
+                      "text": "",
+                      "children": [
+                        {
+                          "tag": "d2l-menu",
+                          "attributes": {
+                            "class": "d2l-menu-mvc d2l-contextmenu"
+                          },
+                          "text": "",
+                          "children": [
+                            {
+                              "tag": "d2l-menu-item",
+                              "attributes": {
+                                "text": "Assess Student",
+                                "id": "d2l_1_107_386_assessStudent"
+                              },
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-menu-item",
+                              "attributes": {
+                                "text": "Mark All Posts as Read",
+                                "id": "d2l_1_107_386_MarkAllRead"
+                              },
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-menu-item",
+                              "attributes": {
+                                "text": "Mark All Posts as Unread",
+                                "id": "d2l_1_107_386_MarkAllUnread"
+                              },
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-menu-item",
+                              "attributes": {
+                                "text": "Flag Thread",
+                                "id": "d2l_1_107_386_FlagThread"
+                              },
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-menu-item",
+                              "attributes": {
+                                "text": "Pin Thread",
+                                "id": "d2l_1_107_386_PinThread"
+                              },
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-menu-item-separator",
+                              "attributes": {},
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-menu-item",
+                              "attributes": {
+                                "text": "View Post History",
+                                "id": "d2l_1_107_386_SeeHistory"
+                              },
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-menu-item-separator",
+                              "attributes": {},
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-menu-item",
+                              "attributes": {
+                                "text": "Copy Thread",
+                                "id": "d2l_1_107_386_CopyThread"
+                              },
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-menu-item-link",
+                              "attributes": {
+                                "text": "Print Thread",
+                                "href": "/d2l/le/3428449/discussions/threads/19956034/Print",
+                                "id": "d2l_1_107_386_PrintThread",
+                                "target": "_blank"
+                              },
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-menu-item",
+                              "attributes": {
+                                "text": "Delete Thread",
+                                "id": "d2l_1_107_386_DeleteThread"
+                              },
+                              "text": "",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "attributes": {
+                    "class": "d2l-clear"
+                  },
+                  "text": "",
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "attributes": {
+                    "class": "d2l-textblock d2l-textblock-secondary d2l_1_46_586 d2l_1_288_564 d2l_1_56_143"
+                  },
+                  "text": "Reggie Walton posted Jan 12, 2025 11:56 PM",
+                  "children": []
+                },
+                {
+                  "tag": "div",
+                  "attributes": {
+                    "class": "d2l_1_46_586 d2l-hidden"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "div",
+                      "attributes": {
+                        "class": "d2l-textblock d2l-textblock-secondary d2l_1_46_586 d2l_1_288_564 d2l_1_56_143",
+                        "aria-hidden": "true"
+                      },
+                      "text": "\u2022",
+                      "children": []
+                    },
+                    {
+                      "tag": "div",
+                      "attributes": {
+                        "class": "d2l-textblock d2l-textblock-secondary d2l_1_46_586 d2l_1_288_564 d2l_1_56_143"
+                      },
+                      "text": "",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "attributes": {
+                    "class": "d2l_1_46_586",
+                    "id": "d2l_1_111_695"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "div",
+                      "attributes": {
+                        "class": "d2l_1_46_586 d2l_1_289_817 d2l-inline"
+                      },
+                      "text": "",
+                      "children": [
+                        {
+                          "tag": "d2l-button-toggle",
+                          "attributes": {
+                            "class": "d2l-button-toggle-container",
+                            "id": "d2l_1_110_592",
+                            "data-pressed-onclick": "D2L.O(\"__g1\",36)();",
+                            "data-notpressed-onclick": "D2L.O(\"__g1\",37)();"
+                          },
+                          "text": "",
+                          "children": [
+                            {
+                              "tag": "d2l-button-subtle",
+                              "attributes": {
+                                "icon": "tier1:subscribe-filled",
+                                "text": "Subscribed",
+                                "description": "Unsubscribe from Module 1",
+                                "slot": "pressed",
+                                "type": "button"
+                              },
+                              "text": "",
+                              "children": []
+                            },
+                            {
+                              "tag": "d2l-button-subtle",
+                              "attributes": {
+                                "icon": "tier1:subscribe-hollow",
+                                "text": "Subscribe",
+                                "description": "Subscribe to Module 1",
+                                "slot": "not-pressed",
+                                "type": "button"
+                              },
+                              "text": "",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "tag": "div",
+              "attributes": {
+                "class": "d2l-clear"
+              },
+              "text": "",
+              "children": []
+            },
+            {
+              "tag": "div",
+              "attributes": {
+                "class": "d2l_1_290_953",
+                "id": "d2l_1_112_798"
+              },
+              "text": "",
+              "children": [
+                {
+                  "tag": "d2l-more-less",
+                  "attributes": {
+                    "height": "63px"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "div",
+                      "attributes": {
+                        "class": "d2l_1_71_219 d2l_1_15_5"
+                      },
+                      "text": "",
+                      "children": [
+                        {
+                          "tag": "div",
+                          "attributes": {
+                            "class": "d2l-htmlblock-untrusted"
+                          },
+                          "text": "",
+                          "children": [
+                            {
+                              "tag": "d2l-html-block",
+                              "attributes": {
+                                "html": "<p>The podcasts that I find myself listening to the most are actual play DND podcasts. Examples of such podcasts include The Adventure Zone, Dungeon and Daddies, NADPOD, and Dimension 20. Its also worth noting that in addition to the fantasy and action narrative that these podcasts often take the form of, I also find myself a fan of the humor interweaved into it. I understand that some other podcasts about dnd and other TTRPGs arent as humor-centered as the ones I listed but I realized that my personal preference leans toward the sometimes goofy nature.</p>\n<p></p>\n<p>Aside from greeting the credits that I need. I think the one thing I want to get about of this class the most is a better understanding of the podcasting space. The hosts of the adventure zone, the Mcelroy&#39;s don&#39;t just host this podcasts but also have their own podcasts that are successful enough for them to make a career our of it. I am interested in exactly what it takes to make this kind of content and how it may differ from other forms of media such as videos on youtube and maybe even consider a career in it</p>"
+                              },
+                              "text": "",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "attributes": {
+                    "class": " d2l-thread-counts-user"
+                  },
+                  "text": "",
+                  "children": [
+                    {
+                      "tag": "div",
+                      "attributes": {
+                        "class": "d2l_1_291_610 d2l-thread-reply-counts"
+                      },
+                      "text": "",
+                      "children": [
+                        {
+                          "tag": "div",
+                          "attributes": {
+                            "class": "d2l_1_46_586 d2l_1_292_699"
+                          },
+                          "text": "",
+                          "children": [
+                            {
+                              "tag": "div",
+                              "attributes": {
+                                "class": "d2l-textblock d2l-offscreen"
+                              },
+                              "text": "0 Unread",
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "attributes": {
+                                "class": "d2l-textblock d2l_1_293_213",
+                                "aria-hidden": "true"
+                              },
+                              "text": "0",
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "attributes": {
+                                "class": "d2l-textblock d2l_1_293_213",
+                                "aria-hidden": "true"
+                              },
+                              "text": "Unread",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "attributes": {
+                            "class": "d2l_1_46_586 d2l_1_292_699"
+                          },
+                          "text": "",
+                          "children": [
+                            {
+                              "tag": "div",
+                              "attributes": {
+                                "class": "d2l-textblock d2l-offscreen"
+                              },
+                              "text": "0 Replies",
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "attributes": {
+                                "class": "d2l-textblock d2l_1_293_213",
+                                "aria-hidden": "true"
+                              },
+                              "text": "0",
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "attributes": {
+                                "class": "d2l-textblock d2l_1_293_213",
+                                "aria-hidden": "true"
+                              },
+                              "text": "Replies",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "tag": "div",
+                          "attributes": {
+                            "class": "d2l_1_46_586 d2l_1_292_699"
+                          },
+                          "text": "",
+                          "children": [
+                            {
+                              "tag": "div",
+                              "attributes": {
+                                "class": "d2l-textblock d2l-offscreen"
+                              },
+                              "text": "0 Views",
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "attributes": {
+                                "class": "d2l-textblock d2l_1_293_213",
+                                "aria-hidden": "true"
+                              },
+                              "text": "0",
+                              "children": []
+                            },
+                            {
+                              "tag": "div",
+                              "attributes": {
+                                "class": "d2l-textblock d2l_1_293_213",
+                                "aria-hidden": "true"
+                              },
+                              "text": "Views",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "tag": "div",
+                  "attributes": {
+                    "class": "d2l-clear"
+                  },
+                  "text": "",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
