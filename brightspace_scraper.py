@@ -30,13 +30,13 @@ class BrightspaceDiscussionScraper:
         print("\nCleaning up old data files...")
         try:
             # Delete HTML files
-            html_files = glob.glob("*.html")
+            html_files = glob.glob(os.path.join("data", "*.html"))
             for file in html_files:
                 os.remove(file)
                 print(f"Deleted: {file}")
             
             # Delete text files
-            txt_files = glob.glob("*.txt")
+            txt_files = glob.glob(os.path.join("data", "*.txt"))
             for file in txt_files:
                 os.remove(file)
                 print(f"Deleted: {file}")
@@ -95,9 +95,10 @@ class BrightspaceDiscussionScraper:
             
             # Save error page for debugging
             error_file = f"error_page_{datetime.now().strftime('%Y%m%d_%H%M%S')}.html"
-            with open(error_file, 'w', encoding='utf-8') as f:
+            error_path = os.path.join("data", error_file)
+            with open(error_path, 'w', encoding='utf-8') as f:
                 f.write(self.driver.page_source)
-            print(f"\nSaved error page to: {error_file}")
+            print(f"\nSaved error page to: {error_path}")
         
         # Verify we're on the right page by checking for discussion topics
         try:
@@ -188,10 +189,11 @@ class BrightspaceDiscussionScraper:
                     
                     # Save the topic page
                     topic_file = f"topic_page_{topic_url.split('/')[-1]}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.html"
-                    with open(topic_file, 'w', encoding='utf-8') as f:
+                    topic_path = os.path.join("data", topic_file)
+                    with open(topic_path, 'w', encoding='utf-8') as f:
                         content_area = self.driver.find_element(By.TAG_NAME, 'body')
                         f.write(content_area.get_attribute('innerHTML'))
-                    print(f"\nSaved topic page to: {topic_file}")
+                    print(f"\nSaved topic page to: {topic_path}")
                     
                     # Wait for posts to load
                     print("\nWaiting for posts to load...")
@@ -247,10 +249,11 @@ class BrightspaceDiscussionScraper:
                             
                             # Save the post page with replies
                             post_file = f"post_page_{post_url.split('/')[-1]}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.html"
-                            with open(post_file, 'w', encoding='utf-8') as f:
+                            post_path = os.path.join("data", post_file)
+                            with open(post_path, 'w', encoding='utf-8') as f:
                                 content_area = self.driver.find_element(By.TAG_NAME, 'body')
                                 f.write(content_area.get_attribute('innerHTML'))
-                            print(f"\nSaved post page with replies to: {post_file}")
+                            print(f"\nSaved post page with replies to: {post_path}")
                             
                             # Print the content directly to console
                             print("\nPost Content:")
@@ -258,7 +261,8 @@ class BrightspaceDiscussionScraper:
                             
                             # Save topic information in a separate file
                             topic_file = f"topic_{topic_url.split('/')[-1]}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
-                            with open(topic_file, 'a', encoding='utf-8') as f:
+                            topic_path = os.path.join("data", topic_file)
+                            with open(topic_path, 'a', encoding='utf-8') as f:
                                 f.write(f"\nPost URL: {post_url}\n")
                                 f.write(f"Post Content:\n{content_area.text}\n\n")
                             
@@ -280,9 +284,10 @@ class BrightspaceDiscussionScraper:
             print(f"\nError collecting discussion data: {str(e)}")
             # Save error page source
             error_file = f"error_page_{datetime.now().strftime('%Y%m%d_%H%M%S')}.html"
-            with open(error_file, 'w', encoding='utf-8') as f:
+            error_path = os.path.join("data", error_file)
+            with open(error_path, 'w', encoding='utf-8') as f:
                 f.write(self.driver.page_source)
-            print(f"Saved error page source to: {error_file}")
+            print(f"Saved error page source to: {error_path}")
             raise
         
     def cleanup(self):

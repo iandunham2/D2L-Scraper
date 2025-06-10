@@ -201,26 +201,6 @@ class DiscussionProcessor:
             print(f"Error processing {filename}: {str(e)}")
             return []
 
-                                ])
-
-        # Read and sort the CSV
-        with open(filename, 'r', newline='', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            sorted_rows = sorted(reader, key=lambda x: (x['Post Author'], x['Reply Author']))
-
-        # Write sorted CSV
-        with open(filename, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.writer(f)
-            writer.writerow(['Post Author', 'Post Content', 'Reply Author', 'Reply Content', 'Main Post ID'])
-            for row in sorted_rows:
-                writer.writerow([
-                    row['Post Author'],
-                    row['Post Content'],
-                    row['Reply Author'],
-                    row['Reply Content'],
-                    row['Main Post ID']
-                ])
-
         return posts
 
 if __name__ == "__main__":
@@ -248,7 +228,7 @@ if __name__ == "__main__":
         all_posts.extend(posts)
     
     # Write all posts to a single CSV file
-    output_file = os.path.join(script_dir, "all_discussions.csv")
+    output_file = os.path.join(data_dir, "all_discussions.csv")
     
     # First write all posts and replies
     with open(output_file, 'w', newline='', encoding='utf-8') as f:

@@ -9,6 +9,7 @@ import time
 import pandas as pd
 from datetime import datetime
 import json
+import os
 
 class BrightspaceDiscussionScraper:
     def __init__(self, username, password, course_url):
@@ -223,9 +224,11 @@ class BrightspaceDiscussionScraper:
                     page_source = self.driver.page_source
                     
                     # Save HTML source
-                    with open(f"discussion_page_{timestamp}.html", "w", encoding="utf-8") as f:
+                    page_file = f"discussion_page_{timestamp}.html"
+                    page_path = os.path.join("data", page_file)
+                    with open(page_path, "w", encoding="utf-8") as f:
                         f.write(page_source)
-                    print(f"Saved HTML source to discussion_page_{timestamp}.html")
+                    print(f"Saved HTML source to {page_path}")
                     
                     # Save DOM structure using JavaScript
                     print("\nSaving DOM structure...")
@@ -614,7 +617,8 @@ class BrightspaceDiscussionScraper:
             # Collect and save data
             discussions = self.collect_discussion_data()
             if discussions:
-                output_file = f"brightspace_discussions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+                filename = f"brightspace_discussions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+                output_file = os.path.join("data", filename)
                 print(f"Saving discussions to {output_file}...")
                 self.save_to_csv(discussions, output_file)
                 print(f"Successfully saved discussions to {output_file}")
