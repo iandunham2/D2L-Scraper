@@ -6,7 +6,7 @@ import pandas as pd
 import glob
 
 class DiscussionProcessor:
-    def __init__(self, base_dir='.'):
+    def __init__(self, base_dir='data'):
         self.base_dir = base_dir
         self.output_file = os.path.join(self.base_dir, 'processed_discussions.csv')
         self.all_posts = []
@@ -89,7 +89,7 @@ class DiscussionProcessor:
     def process_all_files(self):
         """Process all HTML files and write to CSV."""
         # Get list of HTML files
-        html_files = sorted(glob.glob('post_page_*.html'))
+        html_files = sorted(glob.glob(os.path.join(self.base_dir, 'post_page_*.html')))
         
         # Process files and collect posts
         all_posts = []
@@ -99,7 +99,7 @@ class DiscussionProcessor:
             all_posts.extend(posts)
         
         # Write to CSV
-        with open('processed_discussions.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        with open(self.output_file, 'w', newline='', encoding='utf-8') as csvfile:
             fieldnames = ['Author', 'Post', 'Reply']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             
@@ -122,7 +122,7 @@ class DiscussionProcessor:
                         'Reply': reply['reply']
                     })
 
-        print(f"Saved {len(all_posts)} posts to {os.path.abspath('processed_discussions.csv')}")
+        print(f"Saved {len(all_posts)} posts to {os.path.abspath(self.output_file)}")
 
 if __name__ == "__main__":
     processor = DiscussionProcessor()

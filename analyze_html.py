@@ -3,6 +3,7 @@ import pandas as pd
 import lxml.html as html
 from bs4 import BeautifulSoup
 import requests
+import os
 
 def extract_post(post, parent_id=None):
     """Extract a post and its replies recursively."""
@@ -97,7 +98,7 @@ def main():
     df = pd.DataFrame(all_posts)
     
     # Save to CSV
-    csv_file = 'discussion_threads.csv'
+    csv_file = os.path.join('data', 'discussion_threads.csv')
     df.to_csv(csv_file, index=False)
     print(f"\nTotal posts (including replies) extracted: {len(df)}")
     print(f"\nSaved discussion threads to {csv_file}")
